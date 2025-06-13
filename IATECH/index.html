@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Page - IATECH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      width: 400px;
+      margin-right: 40px;
+      border-radius: 10px;
+    }
+
+    .description {
+      max-width: 600px;
+    }
+
+    .description h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .description p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .core-team-section {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .core-team-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .core-team-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-content img {
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Main Page</a>
+    <a href="subpage1.html">About Us</a>
+    <a href="subpage2.html">Services</a>
+    <a href="subpage3.html">Contact</a>
+  </div>
+
+  <div class="main-content">
+    <img src="iatech.png" alt="IATECH building or technology" />
+    <div class="description">
+      <h1>What is IATECH?</h1>
+      <p>
+        IATECH Philippines, Corp. is an Automation Technology system integrator company, established with the aim of delivering cost-effective automation and IT solutions for industrial plants, buildings, and utilities.
+        <br><br>
+        Our goal is to help our customers achieve Operational Excellence through the effective application of automation technologies that increase manufacturing efficiency and improve plant visibility by providing real-time information—helping management make the right decisions at the right time.
+      </p>
+    </div>
+  </div>
+
+  <div class="core-team-section">
+    <h2>The Core Team</h2>
+    <p>
+      The core team of IATECH is comprised of automation engineers highly-trained and with extensive experience in automation engineering and industrial IT. These engineers have successfully been involved in projects covering a wide variety of applications involving diverse automation technologies in buildings, food & beverage, brewery, tobacco, consumer products, chemical, pharmaceutical, cement, power, utility, and water/waste-water industries.
+      <br><br>
+      Therefore, IATECH has the complete expertise and experience to provide total plant solutions—from plant floor to enterprise-wide solutions.
+      <br><br>
+      Our core values of innovation, dedication, and excellence will result in solutions that will delight you while meeting, if not exceeding, your expectations.
+    </p>
+  </div>
+
+</body>
+</html>
