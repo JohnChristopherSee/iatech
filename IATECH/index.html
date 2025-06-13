@@ -2,120 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Main Page - IATECH</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-      background-color: #333;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .navbar a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .navbar a:hover {
-      background-color: #575757;
-    }
-
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 40px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .main-content img {
-      max-width: 100%;
-      height: auto;
-      width: 400px;
-      margin-right: 40px;
-      border-radius: 10px;
-    }
-
-    .description {
-      max-width: 600px;
-    }
-
-    .description h1 {
-      margin-top: 0;
-      font-size: 28px;
-    }
-
-    .description p {
-      line-height: 1.6;
-      text-align: justify;
-    }
-
-    .core-team-section {
-      padding: 40px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .core-team-section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-
-    .core-team-section p {
-      font-size: 16px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-
-    @media (max-width: 768px) {
-      .main-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .main-content img {
-        margin: 0 0 20px 0;
-      }
-    }
-  </style>
+  <title>IATECH - Main Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body style="margin:0; font-family:Arial, sans-serif;">
 
-  <div class="navbar">
-    <a href="index.html">Main Page</a>
-    <a href="subpage1.html">About Us</a>
-    <a href="subpage2.html">Services</a>
-    <a href="subpage3.html">Contact</a>
+  <!-- Navigation -->
+  <div style="background-color:#333; display:flex; justify-content:flex-end;">
+    <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none;">Main Page</a>
+    <a href="subpage1.html" style="color:white; padding:14px 20px; text-decoration:none;">About Us</a>
+    <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none;">Services</a>
+    <a href="subpage3.html" style="color:white; padding:14px 20px; text-decoration:none;">Contact</a>
   </div>
 
-  <div class="main-content">
-    <img src="iatech.png" alt="IATECH building or technology" />
-    <div class="description">
-      <h1>What is IATECH?</h1>
-      <p>
-        IATECH Philippines, Corp. is an Automation Technology system integrator company, established with the aim of delivering cost-effective automation and IT solutions for industrial plants, buildings, and utilities.
-        <br><br>
+  <!-- Main Content -->
+  <div style="display:flex; flex-wrap:wrap; padding:40px; align-items:center; justify-content:center;">
+    <img src="iatech.png" alt="IATECH" style="max-width:100%; height:auto; width:400px; margin-right:40px; border-radius:10px;">
+    <div style="max-width:600px;">
+      <h1 style="margin-top:0; font-size:28px;">What is IATECH?</h1>
+      <p style="line-height:1.6; text-align:justify;">
+        IATECH Philippines, Corp. is an Automation Technology system integrator company, established with the aim of delivering cost-effective automation and IT solutions for industrial plants, buildings, and utilities.<br><br>
         Our goal is to help our customers achieve Operational Excellence through the effective application of automation technologies that increase manufacturing efficiency and improve plant visibility by providing real-time information—helping management make the right decisions at the right time.
       </p>
     </div>
   </div>
 
-  <div class="core-team-section">
-    <h2>The Core Team</h2>
-    <p>
-      The core team of IATECH is comprised of automation engineers highly-trained and with extensive experience in automation engineering and industrial IT. These engineers have successfully been involved in projects covering a wide variety of applications involving diverse automation technologies in buildings, food & beverage, brewery, tobacco, consumer products, chemical, pharmaceutical, cement, power, utility, and water/waste-water industries.
-      <br><br>
-      Therefore, IATECH has the complete expertise and experience to provide total plant solutions—from plant floor to enterprise-wide solutions.
-      <br><br>
+  <!-- Core Team -->
+  <div style="padding:40px 20px; text-align:center; max-width:900px; margin:0 auto;">
+    <h2 style="font-size:26px; margin-bottom:20px;">The Core Team</h2>
+    <p style="font-size:16px; line-height:1.6; text-align:justify;">
+      The core team of IATECH is comprised of automation engineers highly-trained and with extensive experience in automation engineering and industrial IT. These engineers have successfully been involved in projects covering a wide variety of applications involving diverse automation technologies in buildings, food & beverage, brewery, tobacco, consumer products, chemical, pharmaceutical, cement, power, utility, and water/waste-water industries.<br><br>
+      Therefore, IATECH has the complete expertise and experience to provide total plant solutions—from plant floor to enterprise-wide solutions.<br><br>
       Our core values of innovation, dedication, and excellence will result in solutions that will delight you while meeting, if not exceeding, your expectations.
+    </p>
+  </div>
+
+  <!-- General Capabilities -->
+  <div style="padding:40px 20px; max-width:1000px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:24px;">Our General Capabilities</h2>
+    <p style="text-align:justify; line-height:1.6;">IATECH offers the following capabilities in automation engineering to meet your various business requirements:</p>
+    <ul style="max-width:800px; margin:auto; padding-left:20px;">
+      <li>Retrofit, revamp or improvement of existing control systems</li>
+      <li>Modernization and Migration of legacy control systems</li>
+      <li>Total Control System solution</li>
+      <li>Design Engineering</li>
+      <li>Control system hardware – control cabinets and HMI system</li>
+      <li>Implementation of control and visualization application software</li>
+      <li>Commissioning and Startup</li>
+      <li>Design and deployment of Industrial IT solutions</li>
+      <li>Front-end Engineering and Design</li>
+      <li>Project Management</li>
+      <li>Consultancy</li>
+      <li>Maintenance contracts</li>
+    </ul>
+  </div>
+
+  <!-- Specialty -->
+  <div style="padding:40px 20px; max-width:1000px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:24px;">Our Specialty</h2>
+    <p style="text-align:justify; line-height:1.6;">
+      Providing you with the experience and knowledge necessary to integrate your plants’ automation and IT systems in order to deliver the best data-driven solution to meet your exact business needs.<br><br>
+      Harness the power of your plant’s data by integrating your new or existing Data Acquisition Systems, ERP, MRP, and Control Systems.<br><br>
+      Working to the highest GAMP standards, IATECH will automate your plants control system information to improve Operating Efficiencies, Reduce Process Downtime and add greater transparency to your manufacturing processes.
+    </p>
+
+    <h3 style="margin-top:30px;">SCADA / DCS Enhancement</h3>
+    <p style="text-align:justify; line-height:1.6;">Your SCADA / DCS applications can also deliver:</p>
+    <ul style="padding-left:20px;">
+      <li>Batch / Process analysis and reporting</li>
+      <li>Plant performance reports and calculations such as OEE</li>
+      <li>Alarm suppression during maintenance activities</li>
+      <li>Complete user interaction reporting</li>
+    </ul>
+
+    <h3 style="margin-top:30px;">Overall Equipment Efficiency (OEE)</h3>
+    <p style="text-align:justify; line-height:1.6;">
+      IATECH helps manufacturers incorporate real-time data into their operations to improve quality, performance, and availability. We collect OEE data from PLC and SCADA systems, calculate it in real-time, and provide dashboards and reports. Our OEE Lite solution can be installed in just two weeks with no machine downtime.
+    </p>
+
+    <h3 style="margin-top:30px;">Data Historian</h3>
+    <p style="text-align:justify; line-height:1.6;">
+      A Data Historian centralizes SCADA, DCS, BMS, PLC, and Data Logger records. IATECH ensures correct installation and offers custom application development so you can unlock value through centralized reporting and data integration across systems.
+    </p>
+  </div>
+
+  <!-- MES / MIS -->
+  <div style="padding:40px 20px; max-width:1000px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:24px;">MES / MIS</h2>
+    <p style="text-align:justify; line-height:1.6;">
+      IATECH supports the deployment of Manufacturing Execution & Information Systems to connect shop floors to business operations. We design and implement integration with SCADA/DCS systems via third-party historians for seamless data flow.
+    </p>
+    <ul style="padding-left:20px;">
+      <li>Production Planning / Scheduling</li>
+      <li>Recipe Management (Master & Control)</li>
+      <li>Process Execution (Electronic Batch Reporting)</li>
+      <li>Stock Movements (Goods Issued / Received)</li>
+      <li>Reporting (WIP, Batch, Resources)</li>
+    </ul>
+  </div>
+
+  <!-- Consulting -->
+  <div style="padding:40px 20px; max-width:1000px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:24px;">Consulting</h2>
+    <p style="text-align:justify; line-height:1.6;">
+      IATECH consultants provide strategy, design, and system recommendations based on best practices and decades of industry experience. We advise on automation, IT/OT architecture, lean processes, and decision-making improvements.
+    </p>
+    <p style="text-align:justify; line-height:1.6;">
+      We provide assessments tailored to your needs, and design future-proof, scalable systems. By delivering real-time information to the right person at the right time, we help you increase ROI through techniques like OEE, ToC, and lean manufacturing.
     </p>
   </div>
 
