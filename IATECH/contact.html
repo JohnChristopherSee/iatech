@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IATECH - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+  <!-- Navigation Bar -->
+  <div style="background-color:#333; display:flex; justify-content:flex-end;">
+    <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none;">Main Page</a>
+    <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none;">Services</a>
+    <a href="contact.php" style="color:white; padding:14px 20px; text-decoration:none; background-color:#555;">Contact</a>
+  </div>
+
+  <!-- Contact Content -->
+  <div style="padding:40px 20px; max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px;">
+
+    <!-- Form Column -->
+    <div style="flex:1; min-width:300px;">
+      <h1 style="font-size:28px;">Contact Us</h1>
+      <p>For inquiries, collaborations, or more information, please feel free to reach out to us.</p>
+
+      <h2 style="font-size:20px;">Email Inquiry Form</h2>
+
+      <?php
+      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $message = htmlspecialchars($_POST['message']);
+
+        $to = "your@email.com"; // Replace with your actual email address
+        $subject = "New Inquiry from IATECH Contact Form";
+        $body = "Name: $name\nEmail: $email\nMessage:\n$message";
+        $headers = "From: $email";
+
+        if (mail($to, $subject, $body, $headers)) {
+          echo '<p style="color:green;">Message sent successfully!</p>';
+        } else {
+          echo '<p style="color:red;">There was an error sending your message. Please try again later.</p>';
+        }
+      }
+      ?>
+
+      <form method="POST" action="">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="6" required style="width:100%; padding:10px; margin-bottom:20px;"></textarea><br>
+
+        <button type="submit" style="padding:10px 20px; background-color:#333; color:white; border:none; cursor:pointer;">Submit</button>
+      </form>
+    </div>
+
+    <!-- Address & Map Column -->
+    <div style="flex:1; min-width:300px;">
+      <h2 style="font-size:20px;">Our Office</h2>
+      <p>12th Floor, Unit 1210,<br>
+         Annapolis Wilshire Plaza,<br>
+         Annapolis, San Juan City,<br>
+         1502 Metro Manila</p>
+
+      <div style="width:100%; height:300px;">
+        <iframe 
+          src="https://www.google.com/maps?q=12th%20Floor%20Unit%201210%20Annapolis%20Wilshire%20Plaza%2C%20San%20Juan%2C%20Metro%20Manila&output=embed"
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+</bod
