@@ -7,11 +7,21 @@
 </head>
 <body style="margin:0; font-family:Arial, sans-serif;">
 
-  <!-- Navigation Bar -->
-  <div style="background-color:#333; display:flex; justify-content:flex-end;">
-    <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none;">Main Page</a>
-    <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none;">Services</a>
-    <a href="contact.php" style="color:white; padding:14px 20px; text-decoration:none; background-color:#555;">Contact</a>
+  <!-- Navigation Bar with Logo -->
+  <div style="background-color:#333; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+    <!-- Logo -->
+    <a href="index.html" style="display:flex; align-items:center; padding:10px 0;">
+      <img src="Iatech.png" alt="IATECH Logo" style="height:40px;">
+    </a>
+
+    <!-- Navigation Links -->
+    <div style="display:flex;">
+      <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none;">Home</a>
+      <a href="about.html" style="color:white; padding:14px 20px; text-decoration:none;">Services</a>
+      <a href="Partners.html" style="color:white; padding:14px 20px; text-decoration:none;">Our Partners (ignore)</a>
+      <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none;">Products</a>
+      <a href="contact.html" style="color:white; padding:14px 20px; text-decoration:none; background-color:#555;">Contact</a>
+    </div>
   </div>
 
   <!-- Contact Content -->
@@ -24,26 +34,7 @@
 
       <h2 style="font-size:20px;">Email Inquiry Form</h2>
 
-      <?php
-      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $name = htmlspecialchars($_POST['name']);
-        $email = htmlspecialchars($_POST['email']);
-        $message = htmlspecialchars($_POST['message']);
-
-        $to = "your@email.com"; // Replace with your actual email address
-        $subject = "New Inquiry from IATECH Contact Form";
-        $body = "Name: $name\nEmail: $email\nMessage:\n$message";
-        $headers = "From: $email";
-
-        if (mail($to, $subject, $body, $headers)) {
-          echo '<p style="color:green;">Message sent successfully!</p>';
-        } else {
-          echo '<p style="color:red;">There was an error sending your message. Please try again later.</p>';
-        }
-      }
-      ?>
-
-      <form method="POST" action="">
+      <form action="https://formspree.io/f/mrbkabna" method="POST">
         <label for="name">Full Name:</label><br>
         <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
 
@@ -80,4 +71,51 @@
 
   </div>
 
-</bod
+  <!-- Footer -->
+  <div style="background-color:#f8f8f8; padding:40px 20px; font-family:Arial, sans-serif;">
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-between; max-width:1200px; margin:auto;">
+
+      <!-- Address 1 -->
+      <div style="flex:1 1 250px; min-width:250px; margin-bottom:20px;">
+        <p style="margin:0; font-weight:bold;">Iatech Solutions, Inc.</p>
+        <p style="margin:5px 0;">U1210 Annapolis Wilshire Plaza,<br>
+          Annapolis St., Brgy. Greenhills,<br>
+          San Juan, Philippines</p>
+        <p style="margin:5px 0;">Tel: (63) 2 8721-8622</p>
+        <p style="margin:5px 0;">Email: <a href="mailto:buddy.bonifacio@iatech.ph">buddy.bonifacio@iatech.ph</a></p>
+        <p style="margin-top:10px;">Stay connected!</p>
+        <div style="display:flex; gap:10px; margin-top:5px;">
+          <a href="https://ph.linkedin.com/in/buddy-bonifacio-03b22b11"><img src="linkedin.png" alt="LinkedIn" style="width:24px; height:24px;"></a>
+          <a href="https://www.facebook.com/IATECHSolutionsInc"><img src="fb.png" alt="Facebook" style="width:24px; height:24px;"></a>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div style="flex:1 1 180px; min-width:180px; margin-bottom:20px;">
+        <p style="font-weight:bold;">About</p>
+        <p style="margin:5px 0;">About Iatech</p>
+        <p style="margin:5px 0;">Mission & Vision</p>
+        <p style="margin:5px 0;">Key Strengths</p>
+        <p style="margin:5px 0;">Milestones</p>
+      </div>
+
+      <!-- Discover -->
+      <div style="flex:1 1 180px; min-width:180px; margin-bottom:20px;">
+        <p style="font-weight:bold;">Discover</p>
+        <p style="margin:5px 0;">Products</p>
+        <p style="margin:5px 0;">Products Applications</p>
+        <p style="margin:5px 0;">Solutions</p>
+        <p style="margin:5px 0;">Success Stories</p>
+      </div>
+
+      <!-- Contact -->
+      <div style="flex:1 1 180px; min-width:180px; margin-bottom:20px;">
+        <p style="font-weight:bold;">Contact Us</p>
+        <p style="margin:5px 0;">Inquiries</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
